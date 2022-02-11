@@ -1,0 +1,15 @@
+canvas {
+    width: 900px;
+    height: 450px;
+    background-color: #eeeb4f;
+   margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+body{
+    background-color: #00ffff;
+}
+h1,h3{
+    text-align: center;
+}
