@@ -24,7 +24,7 @@ function guardarL(){
         x:nuevaposX,
         y:nuevaposY
     });
-}
+};
 
 function dibujarLinea(evento){
 
@@ -34,7 +34,7 @@ function dibujarLinea(evento){
         let ctx =miCan.getContext('2d')
         // estilos de la linea
         ctx.lineJoin = ctx.LineCap='round';
-        ctx.lineWidth= 8;
+        ctx.lineWidth= 3;
         // color de la linea
         ctx.strokeStyle ='#fff';
         // marca el nuevo punto
@@ -52,15 +52,15 @@ function dibujarLinea(evento){
         //pone las todas las lineas guardadas
         ctx.beginPath();
         lineas.forEach(function(segmento){
-            ctx.moveTo(segmento[0].x, segmento[0].y);
+            ctx.moveTo(segmento[0].x , segmento[0].y );
             segmento.forEach(function(punto, index){
-                ctx.lineTo(punto.x, punto.y);
+                ctx.lineTo(punto.x , punto.y);
             });
         });
         ctx.stroke();
     }
 
-}
+};
 
 function pararD(){
     pintarL= false;
